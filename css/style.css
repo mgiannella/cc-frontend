@@ -586,6 +586,17 @@ ul.dropdown-menu li {
   background-size: cover;
 }
 
+.bg-intro {
+  position: absolute;
+  content: "";
+  left: 100px;
+  top: 0px;
+  width: 45%;
+  min-height: 650px;
+  background: url("../images/about/charity.jpeg") no-repeat;
+  background-size: cover;
+}
+
 .about-content {
   padding: 20px 0px 0px 80px;
 }
