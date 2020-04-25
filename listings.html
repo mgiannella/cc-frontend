@@ -75,35 +75,87 @@
       <div class="col-md-12">
         <div class="block text-center">
           <h1 class="text-capitalize mb-4 text-lg">Listings</h1>
-          <a href="#" target="_blank" class="btn-filter btn-main animated fadeInUp btn-round-full">Apply Filters<i
-            class="btn-icon fa fa-filter ml-2"></i></a>
+          <button data-toggle="modal" data-target="#filterSearch" style="border:0"class="btn-filter btn-main btn-round-full">Apply Filters<i
+            class="btn-icon fa fa-filter ml-2"></i></button>
         </div>
       </div>
     </div>
   </div>
 </section>
+ 
+  <!-- Modal -->
+  <div class="modal fade" id="filterSearch" tabindex="-1" role="dialog" aria-labelledby="filterSearch" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
 
-<!-- section portfolio start -->
+<!-- section listings start -->
 <section class="listing-search bg-gray">
 
   <div class="container">
-      <div class="card">
+    <!--Start listing card-->  
+    <div class="card listing-card">
+        <div class="card-header"><h5>SQL/Python Programming for New Brunswick Blood Bank</h5></div>
           <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">It's a broader card with text below as a natural lead-in to extra content. This content is a little longer.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+              <div class="row">
+                  <div class="col-md-2">
+                    <img src="images/about/about.jpg" class="listing-thumbnail"/>
+                  </div>
+                  <div class="col-md-3">
+                    <ul class="listing-list">
+                      <li class="listing-listitem"><i class="icon-red far fa-calendar-alt"></i> 4/22/2019</li>
+                      <li class="listing-listitem"><i class="icon-red fas fa-tags"></i> Python, Backend, SQL, Informatica, ...</li>
+                      <li class="listing-listitem"><i class="icon-red fas fa-map-marker-alt"></i> New Brunswick, NJ</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac enim lorem. Cras congue lacinia nunc. Aliquam erat volutpat. Cras lacinia orci quis magna dignissim consequat. Donec sit amet neque posuere diam elementum facilisis. Vivamus eget et.</div>
+              </div>
+
           </div>
         </div>
-    <div class="row">
-      <div class="col-md-3">
-        blog-sidebar
-      </div>
-      <div class="col-md-9">
-        YOUR MOM
-    </div>
+
+    <!--Start listing card-->  
+    <div class="card listing-card">
+        <div class="card-header"><h5>SQL/Python Programming for New Brunswick Blood Bank</h5></div>
+          <div class="card-body">
+              <div class="row">
+                  <div class="col-md-2">
+                    <img src="images/about/about.jpg" class="listing-thumbnail"/>
+                  </div>
+                  <div class="col-md-3">
+                    <ul class="listing-list">
+                      <li class="listing-listitem"><i class="icon-red far fa-calendar-alt"></i> 4/22/2019</li>
+                      <li class="listing-listitem"><i class="icon-red fas fa-tags"></i> Python, Backend, SQL, Informatica, ...</li>
+                      <li class="listing-listitem"><i class="icon-red fas fa-map-marker-alt"></i> New Brunswick, NJ</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac enim lorem. Cras congue lacinia nunc. Aliquam erat volutpat. Cras lacinia orci quis magna dignissim consequat. Donec sit amet neque posuere diam elementum facilisis. Vivamus eget et.</div>
+              </div>
+
+          </div>
+        </div>
+    
   </div>
 
 </section>
+
+<!---FOOTER-->
 <footer class="footer section">
   <div class="container">
     <div class="row">
