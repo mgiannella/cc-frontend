@@ -8,7 +8,7 @@
 
   <meta name="author" content="themefisher.com">
 
-  <title>CodersConnect | View Listings</title>
+  <title>CodersConnect | My Postings</title>
 
   <!-- bootstrap.min css -->
   <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
@@ -46,17 +46,17 @@
             <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
 		  </li>
 		  <li class="nav-item active">
-            <a class="nav-link" href="listings.html">Listings <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="posting.html">Postings <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="dropdown05" data-toggle="dropdown" aria-haspopup="true"
-              aria-expanded="false">Hi, Mike <i class="fas fa-caret-down"></i>
+              aria-expanded="false">Hi, Organization <i class="fas fa-caret-down"></i>
 			</a>
             <ul class="dropdown-menu" aria-labelledby="dropdown05">
-              <li><a class="dropdown-item" href="blog-grid.html">My Account</a></li>
-              <li><a class="dropdown-item" href="blog-sidebar.html">My Jobs</a></li>
+              <li><a class="dropdown-item" href="#">Account</a></li>
+              <li><a class="dropdown-item" href="posting.html">Postings</a></li>
 
-              <li><a class="dropdown-item" href="blog-single.html">Sign Out</a></li>
+              <li><a class="dropdown-item" href="#">Sign Out</a></li>
             </ul>
           </li>
         </ul>
@@ -74,35 +74,32 @@
     <div class="row">
       <div class="col-md-12">
         <div class="block text-center">
-          <h1 class="text-capitalize mb-4 text-lg">Listings</h1>
-          <button data-toggle="modal" data-target="#filterSearch" style="border:0"class="btn-filter btn-main btn-round-full">Apply Filters<i
-            class="btn-icon fa fa-filter ml-2"></i></button>
+          <h1 class="text-capitalize mb-4 text-lg">Postings</h1>
+          <span class="text-color">Manage your organizations postings for projects, view applicants for each project, and create new postings!</span>
         </div>
       </div>
     </div>
   </div>
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 sloptop">
+          <div class="block text-center">
+            <button data-toggle="#" data-target="#" style="border:5" class="btn-filter btn-main btn-round-full"><i class="fas fa-plus"></i> Create new project</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
 </section>
 
-  <!-- Modal -->
-  <div class="modal fade" id="filterSearch" tabindex="-1" role="dialog" aria-labelledby="filterSearch" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-      </div>
-    </div>
-  </div>
+
+
 
 
 <!-- section listings start -->
@@ -111,7 +108,7 @@
   <div class="container">
     <!--Start listing card-->
     <div class="card listing-card">
-        <div class="card-header"><h5>SQL/Python Programming for New Brunswick Blood Bank</h5></div>
+        <div class="card-header"><h5>SQL/Python Programming for New Brunswick Blood Bank <div style="float:right;"> Status: <font color="red">Closed</font> </h5></div>
           <div class="card-body">
               <div class="row">
                   <div class="col-md-2">
@@ -122,19 +119,24 @@
                       <li class="listing-listitem"><i class="icon-red far fa-calendar-alt"></i> 4/22/2019</li>
                       <li class="listing-listitem"><i class="icon-red fas fa-tags"></i> Python, Backend, SQL, Informatica, ...</li>
                       <li class="listing-listitem"><i class="icon-red fas fa-map-marker-alt"></i> New Brunswick, NJ</li>
+                      <li class="listing-listitem"><i class="icon-blue fas fa-user-circle"></i> Applicants: 13</li>
                     </ul>
                   </div>
                   <div class="col-md-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac enim lorem. Cras congue lacinia nunc. Aliquam erat volutpat. Cras lacinia orci quis magna dignissim consequat. Donec sit amet neque posuere diam elementum facilisis. Vivamus eget et.</div>
               </div>
-
+              <div class="post-act">
+                   <button type="button" class="btn btn-outline-secondary btn-smallgray btn-space" style="float:left;"> <i class="fas fa-edit"></i> Edit</button>
+                   <button type="button" class="btn btn-outline-danger btn-small" style="float:left;"> <i class="fas fa-times"></i> Remove</button>
+                   <button type="button" class="btn btn-primary" style="float:right;">View Applicants</button>
+             </div>
           </div>
         </div>
 
     <!--Start listing card-->
     <div class="card listing-card">
-        <div class="card-header"><h5>SQL/Python Programming for New Brunswick Blood Bank</h5></div>
+        <div class="card-header"><h5>SQL/Python Programming for New Brunswick Blood Bank <div style="float:right;"> Status: <font color="green">Open</font> </h5></div>
           <div class="card-body">
-              <div class="row">
+              <div class="row butt">
                   <div class="col-md-2">
                     <img src="images/about/about.jpg" class="listing-thumbnail"/>
                   </div>
@@ -143,13 +145,43 @@
                       <li class="listing-listitem"><i class="icon-red far fa-calendar-alt"></i> 4/22/2019</li>
                       <li class="listing-listitem"><i class="icon-red fas fa-tags"></i> Python, Backend, SQL, Informatica, ...</li>
                       <li class="listing-listitem"><i class="icon-red fas fa-map-marker-alt"></i> New Brunswick, NJ</li>
+                      <li class="listing-listitem"><i class="icon-blue fas fa-user-circle"></i> Applicants: 2</li>
                     </ul>
                   </div>
                   <div class="col-md-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac enim lorem. Cras congue lacinia nunc. Aliquam erat volutpat. Cras lacinia orci quis magna dignissim consequat. Donec sit amet neque posuere diam elementum facilisis. Vivamus eget et.</div>
               </div>
-
+              <div class="post-act">
+                   <button type="button" class="btn btn-outline-secondary btn-smallgray btn-space" style="float:left;"> <i class="fas fa-edit"></i> Edit</button>
+                   <button type="button" class="btn btn-outline-danger btn-small" style="float:left;"> <i class="fas fa-times"></i> Remove</button>
+                   <button type="button" class="btn btn-primary" style="float:right;">View Applicants</button>
+             </div>
           </div>
         </div>
+
+        <div class="card listing-card">
+            <div class="card-header"><h5>SQL/Python Programming for New Brunswick Blood Bank <div style="float:right;"> Status: <font color="green">Open</font> </h5></div>
+              <div class="card-body">
+                  <div class="row">
+                      <div class="col-md-2">
+                        <img src="images/about/about.jpg" class="listing-thumbnail"/>
+                      </div>
+                      <div class="col-md-3">
+                        <ul class="listing-list">
+                          <li class="listing-listitem"><i class="icon-red far fa-calendar-alt"></i> 4/22/2019</li>
+                          <li class="listing-listitem"><i class="icon-red fas fa-tags"></i> Python, Backend, SQL, Informatica, ...</li>
+                          <li class="listing-listitem"><i class="icon-red fas fa-map-marker-alt"></i> New Brunswick, NJ</li>
+                          <li class="listing-listitem"><i class="icon-blue fas fa-user-circle"></i> Applicants: 20</li>
+                        </ul>
+                      </div>
+                      <div class="col-md-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac enim lorem. Cras congue lacinia nunc. Aliquam erat volutpat. Cras lacinia orci quis magna dignissim consequat. Donec sit amet neque posuere diam elementum facilisis. Vivamus eget et.</div>
+                  </div>
+                  <div class="post-act">
+                       <button type="button" class="btn btn-outline-secondary btn-smallgray btn-space" style="float:left;"> <i class="fas fa-edit"></i> Edit</button>
+                       <button type="button" class="btn btn-outline-danger btn-small" style="float:left;"> <i class="fas fa-times"></i> Remove</button>
+                       <button type="button" class="btn btn-primary" style="float:right;">View Applicants</button>
+                 </div>
+              </div>
+            </div>
 
   </div>
 
