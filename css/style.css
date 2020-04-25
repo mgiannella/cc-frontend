@@ -79,6 +79,7 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
 
 .listing-search{
   padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .py-7 {
@@ -105,8 +106,6 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
   padding: 0.8rem 2.1rem;
   letter-spacing: 0.15rem;
   border-radius: 0;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
 }
 
 .btn.btn-icon i {
@@ -1450,3 +1449,31 @@ h3.quote::before {
 }
 
 /*# sourceMappingURL=maps/style.css.map */
+.listing-thumbnail {
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  display: block;
+}
+
+.listing-list {
+  width: 100%;
+  list-style-type: none;
+  float: left;
+  padding-left: 0;
+}
+
+.listing-listitem {
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+  font-weight: 600;
+}
+
+.icon-red {
+  color: #f75757;
+}
+
+.listing-card {
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+}
